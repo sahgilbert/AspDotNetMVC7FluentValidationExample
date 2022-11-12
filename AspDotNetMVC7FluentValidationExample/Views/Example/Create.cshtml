@@ -24,28 +24,28 @@
     <br />
     @Html.TextBoxFor(m => m.FirstLineOfAddress)
     <br />
-    @Html.ValidationMessageFor(m => m.FirstLineOfAddress, null, new { @class = "text-danger" })
+    @*@Html.ValidationMessageFor(m => m.FirstLineOfAddress, null, new { @class = "text-danger" })*@
 
     <br />
     @Html.LabelFor(m => m.PropertyPrice)
     <br />
     @Html.TextBoxFor(m => m.PropertyPrice)
     <br />
-    @Html.ValidationMessageFor(m => m.PropertyPrice, null, new { @class = "text-danger" })
+    @*@Html.ValidationMessageFor(m => m.PropertyPrice, null, new { @class = "text-danger" })*@
 
     <br />
     @Html.LabelFor(m => m.Currency)
     <br />
     @Html.DropDownListFor(m => m.Currency, Model.Currencies, "Please select...", null)
     <br />
-    @Html.ValidationMessageFor(m => m.Currency, null, new { @class = "text-danger" })
+    @*@Html.ValidationMessageFor(m => m.Currency, null, new { @class = "text-danger" })*@
 
     <br />
     @Html.LabelFor(m => m.Description)
     <br />
     @Html.TextAreaFor(m => m.Description, 10, 50, null)
     <br />
-    @Html.ValidationMessageFor(m => m.Description, null, new { @class = "text-danger" })
+    @*@Html.ValidationMessageFor(m => m.Description, null, new { @class = "text-danger" })*@
 
     <br />
     <button type="submit">Submit</button>
