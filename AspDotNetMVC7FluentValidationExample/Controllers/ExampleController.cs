@@ -35,6 +35,3 @@ public class ExampleController : Controller
         return View("Create", exampleCreateViewModel);
     }
 }
-
-
-
