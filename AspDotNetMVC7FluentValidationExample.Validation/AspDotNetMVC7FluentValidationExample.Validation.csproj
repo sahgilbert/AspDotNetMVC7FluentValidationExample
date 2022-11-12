@@ -12,4 +12,7 @@
   <ItemGroup>
     <PackageReference Include="FluentValidation.AspNetCore" Version="11.2.2" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AspDotNetMVC7FluentValidationExample.ViewModels\AspDotNetMVC7FluentValidationExample.ViewModels.csproj" />
+  </ItemGroup>
 </Project>
