@@ -5,6 +5,8 @@ VisualStudioVersion = 25.0.1704.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspDotNetMVC7FluentValidationExample", "AspDotNetMVC7FluentValidationExample\AspDotNetMVC7FluentValidationExample.csproj", "{A7B1860B-F936-4600-9717-E7C0F8BD78CE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspDotNetMVC7FluentValidationExample.Validation", "AspDotNetMVC7FluentValidationExample.Validation\AspDotNetMVC7FluentValidationExample.Validation.csproj", "{DCBEF30D-8272-4382-8BCC-5FDBD5001169}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{A7B1860B-F936-4600-9717-E7C0F8BD78CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A7B1860B-F936-4600-9717-E7C0F8BD78CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A7B1860B-F936-4600-9717-E7C0F8BD78CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DCBEF30D-8272-4382-8BCC-5FDBD5001169}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DCBEF30D-8272-4382-8BCC-5FDBD5001169}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DCBEF30D-8272-4382-8BCC-5FDBD5001169}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DCBEF30D-8272-4382-8BCC-5FDBD5001169}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
