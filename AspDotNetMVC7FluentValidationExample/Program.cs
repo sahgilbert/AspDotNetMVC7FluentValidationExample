@@ -6,6 +6,7 @@ builder.Services.AddControllersWithViews();
 // Configure FluentValidation
 builder.Services.AddFluentValidationAutoValidation();
 builder.Services.AddFluentValidationClientsideAdapters();
+builder.Services.AddScoped<IValidator<ExampleCreateViewModel>, ExampleCreateViewModelValidator>();
 // Configure FluentValidation
 
 var app = builder.Build();
