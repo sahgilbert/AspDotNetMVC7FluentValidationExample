@@ -1,6 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations;
-
-public static class ValidationExtensions
+﻿public static class ValidationExtensions
 {
     public static void AddToModelState(this ValidationResult result, ModelStateDictionary modelState)
     {
