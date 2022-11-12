@@ -27,7 +27,7 @@
     <span asp-validation-for="FirstLineOfAddress" class="text-danger"></span>
 
     <br />
-    <label asp-for="PropertyPrice"></label>
+    @Html.LabelFor(m => m.PropertyPrice)
     <br />
     @Html.TextBoxFor(m => m.PropertyPrice)
     <br />
