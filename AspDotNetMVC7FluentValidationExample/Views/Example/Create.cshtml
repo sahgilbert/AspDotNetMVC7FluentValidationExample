@@ -20,18 +20,18 @@
     @*@Html.ValidationSummary(false, "", new { @class = "text-danger" })*@
 
     <br />
-    <label asp-for="FirstLineOfAddress"></label>
+    @Html.LabelFor(m => m.FirstLineOfAddress)
     <br />
     @Html.TextBoxFor(m => m.FirstLineOfAddress)
     <br />
-    <span asp-validation-for="FirstLineOfAddress" class="text-danger"></span>
+    @Html.ValidationMessageFor(m => m.FirstLineOfAddress, null, new { @class = "text-danger" })
 
     <br />
     @Html.LabelFor(m => m.PropertyPrice)
     <br />
     @Html.TextBoxFor(m => m.PropertyPrice)
     <br />
-    @Html.ValidationMessageFor(m => m.PropertyPrice, null, new { @class="text-danger"})
+    @Html.ValidationMessageFor(m => m.PropertyPrice, null, new { @class = "text-danger" })
 
     <br />
     <label asp-for="Currency"></label>
