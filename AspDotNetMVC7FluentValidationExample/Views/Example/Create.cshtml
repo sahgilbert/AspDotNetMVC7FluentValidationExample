@@ -23,11 +23,15 @@
     <label asp-for="FirstLineOfAddress"></label>
     <br />
     @Html.TextBoxFor(m => m.FirstLineOfAddress)
+    <br />
+    <span asp-validation-for="FirstLineOfAddress" class="text-danger"></span>
 
     <br />
     <label asp-for="PropertyPrice"></label>
     <br />
     @Html.TextBoxFor(m => m.PropertyPrice)
+    <br />
+    @Html.ValidationMessageFor(m => m.PropertyPrice, null, new { @class="text-danger"})
 
     <br />
     <label asp-for="Currency"></label>
