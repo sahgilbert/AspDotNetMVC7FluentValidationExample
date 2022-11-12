@@ -3,6 +3,11 @@
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
+// Configure FluentValidation
+builder.Services.AddFluentValidationAutoValidation();
+builder.Services.AddFluentValidationClientsideAdapters();
+// Configure FluentValidation
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
