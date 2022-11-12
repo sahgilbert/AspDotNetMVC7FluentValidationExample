@@ -1,1 +1,36 @@
-﻿
+﻿@using AspDotNetMVC7FluentValidationExample.ViewModels
+@model ExampleCreateViewModel
+
+@{
+    var title = "Create Example";
+
+    ViewData["Title"] = title;
+}
+
+<form asp-controller="Example" asp-action="Create" method="POST">
+
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+    <br />
+    <label asp-for="FirstLineOfAddress"></label>
+    <br />
+    @Html.TextBoxFor(m => m.FirstLineOfAddress)
+
+    <br />
+    <label asp-for="PropertyPrice"></label>
+    <br />
+    @Html.TextBoxFor(m => m.PropertyPrice)
+
+    <br />
+    <label asp-for="Currency"></label>
+    <br />
+    @Html.DropDownListFor(m => m.Currency, Model.Currencies, "Please select...", null)
+
+    <br />
+    <label asp-for="Description"></label>
+    <br />
+    @Html.TextAreaFor(m => m.Description, 10, 50, null)
+
+    <br />
+    <button type="submit">Submit</button>
+</form>
