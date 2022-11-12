@@ -2,6 +2,13 @@
 
 public class ExampleController : Controller
 {
+    private readonly IValidator<ExampleCreateViewModel> _validator;
+
+    public ExampleController(IValidator<ExampleCreateViewModel> validator)
+    {
+        _validator = validator;
+    }
+
     [HttpGet]
     public ActionResult Index()
     {
@@ -16,23 +23,24 @@ public class ExampleController : Controller
 
     [HttpPost]
     [ValidateAntiForgeryToken]
-    public IActionResult Create(ExampleCreateViewModel exampleCreateViewModel)
+    public async Task<IActionResult> Create(ExampleCreateViewModel exampleCreateViewModel)
     {
-        if (ModelState.IsValid)
+        ValidationResult result = await _validator.ValidateAsync(exampleCreateViewModel);
+
+        if (result.IsValid)
         {
-            bool successfullyStoredInDatabase = true;
-
-            if (successfullyStoredInDatabase)
-            {
-                return RedirectToAction("Success", "Example");
-            }
-            else
-            {
-                return View("Create", exampleCreateViewModel);
-            }
+            return RedirectToAction("Success", "Example");
         }
+        else
+        {
+            // Copy the validation results into ModelState.
+            // ASP.NET uses the ModelState collection to populate 
+            // error messages in the View.
+            result.AddToModelState(this.ModelState);
 
-        return View("Create", exampleCreateViewModel);
+            // re-render the view when validation failed.
+            return View("Create", exampleCreateViewModel);
+        }
     }
 
     [HttpGet]
