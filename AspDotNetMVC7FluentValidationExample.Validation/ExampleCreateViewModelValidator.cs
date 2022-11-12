@@ -1,4 +1,8 @@
-﻿namespace AspDotNetMVC7FluentValidationExample.Validation;
+﻿using FluentValidation;
+using FluentValidation.Validators;
+using FluentValidation.Results;
+
+namespace AspDotNetMVC7FluentValidationExample.Validation;
 
 public sealed class ExampleCreateViewModelValidator : GenericValidator<ExampleCreateViewModel>
 {
