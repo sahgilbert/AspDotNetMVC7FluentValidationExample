@@ -1,0 +1,1 @@
+﻿global using AspDotNetMVC7FluentValidationExample.ViewModels;
