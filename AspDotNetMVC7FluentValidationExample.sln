@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspDotNetMVC7FluentValidati
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspDotNetMVC7FluentValidationExample.ViewModels", "AspDotNetMVC7FluentValidationExample.ViewModels\AspDotNetMVC7FluentValidationExample.ViewModels.csproj", "{EFC83F3A-9A3D-4427-8F00-9048688CA973}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspDotNetMVC7FluentValidationExample.Validation.Extensions", "AspDotNetMVC7FluentValidationExample.Validation.Extensions\AspDotNetMVC7FluentValidationExample.Validation.Extensions.csproj", "{965F0D43-D7CB-49E6-ADA3-5DD2BB0103C7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{EFC83F3A-9A3D-4427-8F00-9048688CA973}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EFC83F3A-9A3D-4427-8F00-9048688CA973}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EFC83F3A-9A3D-4427-8F00-9048688CA973}.Release|Any CPU.Build.0 = Release|Any CPU
+		{965F0D43-D7CB-49E6-ADA3-5DD2BB0103C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{965F0D43-D7CB-49E6-ADA3-5DD2BB0103C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{965F0D43-D7CB-49E6-ADA3-5DD2BB0103C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{965F0D43-D7CB-49E6-ADA3-5DD2BB0103C7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
