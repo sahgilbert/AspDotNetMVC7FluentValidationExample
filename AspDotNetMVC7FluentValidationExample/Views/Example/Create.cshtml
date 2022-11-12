@@ -34,14 +34,18 @@
     @Html.ValidationMessageFor(m => m.PropertyPrice, null, new { @class = "text-danger" })
 
     <br />
-    <label asp-for="Currency"></label>
+    @Html.LabelFor(m => m.Currency)
     <br />
     @Html.DropDownListFor(m => m.Currency, Model.Currencies, "Please select...", null)
+    <br />
+    @Html.ValidationMessageFor(m => m.Currency, null, new { @class = "text-danger" })
 
     <br />
-    <label asp-for="Description"></label>
+    @Html.LabelFor(m => m.Description)
     <br />
     @Html.TextAreaFor(m => m.Description, 10, 50, null)
+    <br />
+    @Html.ValidationMessageFor(m => m.Description, null, new { @class = "text-danger" })
 
     <br />
     <button type="submit">Submit</button>
