@@ -15,6 +15,9 @@
     <ProjectReference Include="..\AspDotNetMVC7FluentValidationExample.Validation\AspDotNetMVC7FluentValidationExample.Validation.csproj">
       <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
     </ProjectReference>
+    <ProjectReference Include="..\AspDotNetMVC7FluentValidationExample.Validation.Extensions\AspDotNetMVC7FluentValidationExample.Validation.Extensions.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Remove="FluentValidation.AspNetCore" />
