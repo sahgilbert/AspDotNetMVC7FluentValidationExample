@@ -1,6 +1,8 @@
 ﻿public static class ValidationExtensions
 {
-    public static void AddToModelState(this ValidationResult result, ModelStateDictionary modelState)
+    public static void AddToModelState(
+        this FluentValidation.Results.ValidationResult result,
+        ModelStateDictionary modelState)
     {
         foreach (var error in result.Errors)
         {
