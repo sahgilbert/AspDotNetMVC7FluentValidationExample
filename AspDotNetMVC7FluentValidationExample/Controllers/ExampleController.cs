@@ -34,4 +34,10 @@ public class ExampleController : Controller
 
         return View("Create", exampleCreateViewModel);
     }
+
+    [HttpGet]
+    public ActionResult Success()
+    {
+        return View();
+    }
 }
